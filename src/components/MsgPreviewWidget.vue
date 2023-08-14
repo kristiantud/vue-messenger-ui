@@ -15,8 +15,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "1",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "Captain Jack Sparrow",
+                            content: "Where's the rum?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -26,8 +26,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "2",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "Harry Potter",
+                            content: "Where's the sorcerer's stone?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -37,8 +37,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "3",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "J. Robert Oppenheimer",
+                            content: "Where's the nuke?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -48,8 +48,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "4",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "Frodo Baggins",
+                            content: "Where's the ring?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -59,8 +59,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "5",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "Mr. Robot",
+                            content: "Where's Angela?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -70,8 +70,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "6",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "Dr. Strange",
+                            content: "Where's the Time Stone?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -81,8 +81,8 @@ import MessagePreviews from './MessagePreviews.vue';
                     id: "7",
                     messages: [
                         { id: "69",
-                            sender: "somerandomuseridbythesender",
-                            content: "Hello brother!" },
+                            sender: "Itachi",
+                            content: "Where's Sasuke?!" },
                         { id: "70",
                             sender: "somerandomuseridbythesender",
                             content: "How you been???" },
@@ -106,3 +106,24 @@ import MessagePreviews from './MessagePreviews.vue';
 
 </template>
 
+<style>
+    ::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+</style>

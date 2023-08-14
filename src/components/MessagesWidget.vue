@@ -6,7 +6,7 @@
             <MsgPreviewWidget />
         </div>
         <div style="width: 100%;">
-            
+            <MsgLogsWidget />
         </div>
     </div>
 
@@ -15,12 +15,14 @@
 
 
 <script>
-    import MsgPreviewWidget from './MsgPreviewWidget.vue';
+    import MsgLogsWidget from './MsgLogsWidget.vue';
+import MsgPreviewWidget from './MsgPreviewWidget.vue';
 
     export default {
         components: {
-            MsgPreviewWidget
-        }
+    MsgPreviewWidget,
+    MsgLogsWidget
+}
     }
 </script>
 

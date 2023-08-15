@@ -5,6 +5,11 @@
 
 <script>
 import MessagePreviews from './MessagePreviews.vue';
+import { ref } from 'vue';
+
+    const currentSelected = ref();
+
+    
 
     export default {
     name: 'MsgPreviewWidget',
@@ -12,7 +17,7 @@ import MessagePreviews from './MessagePreviews.vue';
         return {
             messages: [
                 {
-                    id: "1",
+                    id: 1,
                     messages: [
                         { id: "69",
                             sender: "Captain Jack Sparrow",
@@ -23,7 +28,7 @@ import MessagePreviews from './MessagePreviews.vue';
                     ]
                 },
                 {
-                    id: "2",
+                    id: 2,
                     messages: [
                         { id: "69",
                             sender: "Harry Potter",
@@ -34,7 +39,7 @@ import MessagePreviews from './MessagePreviews.vue';
                     ]
                 },
                 {
-                    id: "3",
+                    id: 3,
                     messages: [
                         { id: "69",
                             sender: "J. Robert Oppenheimer",
@@ -45,7 +50,7 @@ import MessagePreviews from './MessagePreviews.vue';
                     ]
                 },
                 {
-                    id: "4",
+                    id: 4,
                     messages: [
                         { id: "69",
                             sender: "Frodo Baggins",
@@ -56,7 +61,7 @@ import MessagePreviews from './MessagePreviews.vue';
                     ]
                 },
                 {
-                    id: "5",
+                    id: 5,
                     messages: [
                         { id: "69",
                             sender: "Mr. Robot",
@@ -67,7 +72,7 @@ import MessagePreviews from './MessagePreviews.vue';
                     ]
                 },
                 {
-                    id: "6",
+                    id: 6,
                     messages: [
                         { id: "69",
                             sender: "Dr. Strange",
@@ -78,7 +83,7 @@ import MessagePreviews from './MessagePreviews.vue';
                     ]
                 },
                 {
-                    id: "7",
+                    id: 7,
                     messages: [
                         { id: "69",
                             sender: "Itachi",
@@ -88,7 +93,7 @@ import MessagePreviews from './MessagePreviews.vue';
                             content: "How you been???" },
                     ]
                 },
-            ]
+            ],
         };
     },
     components: { MessagePreviews }
@@ -97,9 +102,11 @@ import MessagePreviews from './MessagePreviews.vue';
 
 
 <template>
+    {{ console.log(this.currentSelected) }}
     <div>
         <div v-for="msg in messages">
-            <MessagePreviews :msgs="msg.messages" :sender="msg.messages[0].sender"  />
+            
+            <MessagePreviews :msgs="msg.messages" :sender="msg.messages[0].sender" :id="msg.id" :selected="this.currentSelected" />
         </div>
     </div>
 

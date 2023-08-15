@@ -1,8 +1,16 @@
 <template>
-    <div style="padding: 30px 15px" class="msg-preview">
-        <p><b>{{ sender }}</b></p>
-        <p>{{ msgs[0].content }}</p>
+    <div>
+        <div style="padding: 30px 15px" class="msg-preview" >
+            <p><b>{{ sender }}</b></p>
+            <p>{{ msgs[0].content }}</p>
+        </div>
+        <!-- <div style="padding: 30px 15px; background-color: #606060" class="msg-preview">
+            <p><b>{{ sender }}</b></p>
+            <p>{{ msgs[0].content }}</p>
+        </div> -->
     </div>
+    {{ selected }}
+    
     <hr>
 </template>
 
@@ -13,6 +21,8 @@
         props: {
             sender: String,
             msgs: Array,
+            id: Number,
+            selected: Number,
         }
     }
 

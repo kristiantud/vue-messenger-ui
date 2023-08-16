@@ -1,15 +1,16 @@
 <template>
     <div>
-        <div style="padding: 30px 15px" class="msg-preview" >
+        <div style="padding: 30px 15px; background-color: #606060" class="msg-preview" v-if="selected === id">
             <p><b>{{ sender }}</b></p>
             <p>{{ msgs[0].content }}</p>
         </div>
-        <!-- <div style="padding: 30px 15px; background-color: #606060" class="msg-preview">
+        <div style="padding: 30px 15px" class="msg-preview" v-else>
             <p><b>{{ sender }}</b></p>
             <p>{{ msgs[0].content }}</p>
-        </div> -->
+        </div>
+        
     </div>
-    {{ selected }}
+    
     
     <hr>
 </template>

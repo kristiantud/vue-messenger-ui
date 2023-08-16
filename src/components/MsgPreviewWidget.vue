@@ -103,10 +103,8 @@ import { ref } from 'vue';
 
 
 <template>
-    {{ console.log(this.currentSelected) }}
     <div>
-        <div v-for="msg in messages">
-            
+        <div v-for="msg in messages" @click="currentSelected = msg.id">
             <MessagePreviews :msgs="msg.messages" :sender="msg.messages[0].sender" :id="msg.id" :selected="this.currentSelected" />
         </div>
     </div>

@@ -7,7 +7,7 @@
 import MessagePreviews from './MessagePreviews.vue';
 import { ref } from 'vue';
 
-    const currentSelected = ref();
+    const currentSelected = ref(-1);
 
     
 
@@ -15,6 +15,7 @@ import { ref } from 'vue';
     name: 'MsgPreviewWidget',
     data: function () {
         return {
+            currentSelected,
             messages: [
                 {
                     id: 1,
